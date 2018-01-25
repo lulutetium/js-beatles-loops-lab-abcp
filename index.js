@@ -9,15 +9,12 @@ function theBeatlesPlay(musicians,instruments){
 
 function iLoveTheBeatles(n){
   var newArr = [];
-  var counter = false;
   
   do{
     newArr.push("I love the Beatles!");
-  }while(!!counter && n<15){
-    for(var i = n; i > 1; i--){
-      n--;
-      newArr.push("I love the Beatles!");
-    }
-  }
+    n++;
+    console.log(n);
+  }while(n<15);
+  
   return newArr;
 }
